@@ -3,18 +3,10 @@
 **IMPORTANT :** This is my environment config, don't copy blindly and adjust to your liking.
 
 
-<details><summary> MacOS </summary>
+<details><summary> MacOS & Linux </summary>
 
-```sh
+```bash
 git clone https://github.com/julienbarthelemy/dev-config.git "${XDG_CONFIG_HOME:-$HOME/.config}"
-```
-
-</details>
-
-<details><summary> Windows </summary>
-
-```
-git clone https://github.com/julienbarthelemy/dev-config.git $env:USERPROFILE\.config
 ```
 
 </details>
@@ -24,52 +16,25 @@ git clone https://github.com/julienbarthelemy/dev-config.git $env:USERPROFILE\.c
 - [Neovim](https://neovim.io/) - (Version 0.9 or Later)
 - [Nerd Font](https://www.nerdfonts.com/) - I use UbuntuMono Nerd Font
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) - For Telescope Fuzzy Finder
-- [Oh-My-Posh](https://ohmyposh.dev/docs/) - For Terminal UI improvements
 
 # Terminal Setup
 
-Not much here, I use some Aliases to be more efficient and Oh-My-Posh to have a better looking UI.
-
-<details><summary> Windows </summary>
-
-This is to add in your Powershell *$PROFILE* on windows to ensure redirection to the `.config` directory 
-
-```powershell
-. $env:USERPROFILE\.config\powershell\user_profile.ps1
-$env:XDG_CONFIG_HOME = "$HOME/.config"
-```
-
-```powershell Windows
-choco install oh-my-posh
-```
-
-</details>
-
-<details><summary> MacOS </summary>
-
-```bash MacOS
-brew install jandedobbeleer/oh-my-posh/oh-my-posh
-```
-
-</details>
+Not much here, I use Github_Dark on the Windows Terminal, added as JSON. I use WSL2 - Ubuntu.
 
 # Neovim Setup
 
 I use Neovim instead of Vim as I find it easier to use LUA. You can achieve the same with VIM.
+I use the default Node installation with nvm.
 
-<details><summary> Windows </summary>
+- [Node.js](https://nodejs.org/en/download/package-manager/current) - Node install guide
 
-1. install [chocolatey](https://chocolatey.org/install)
-either follow the instructions on the page or use winget,
-run in cmd as **admin**:
-```powershell
-winget install --accept-source-agreements chocolatey.chocolatey
-```
+<details><summary> Ubuntu </summary>
 
-2. install all requirements using choco, exit previous cmd and
-open a new one so that choco path is set, and run in cmd as **admin**:
-```powershell
-choco install -y neovim git ripgrep mingw 
+Install and update all requirements.
+```bash
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip git neovim
 ```
 
 </details>
@@ -87,7 +52,7 @@ brew install neovim git ripgrep
 I don't use that many plugins, most of them are quality of life.
 The most important ones are : 
 
-- LSP Setup 
+- LSP Setup *(Use LSP Zero for a quicker configuration)* 
 - Telescope
 - Treesitter
 - CMP
