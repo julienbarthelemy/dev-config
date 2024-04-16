@@ -23,7 +23,6 @@ Not much here, I use Github_Dark on the Windows Terminal, added as JSON. I use W
 
 <details><summary> Theme </summary>
 
-JSON for my Terminal Theme.
 ```json
     {
     "background": "#101216",
