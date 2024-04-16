@@ -24,7 +24,7 @@ Not much here, I use Github_Dark on the Windows Terminal, added as JSON. I use W
 <details><summary> Theme </summary>
 
 ```json
-    {
+{
     "background": "#101216",
     "black": "#000000",
     "blue": "#6CA4F8",
@@ -46,7 +46,7 @@ Not much here, I use Github_Dark on the Windows Terminal, added as JSON. I use W
     "selectionBackground": "#3B5070",
     "white": "#FFFFFF",
     "yellow": "#E3B341"
-    }
+}
 ```
 
 </details>
@@ -87,7 +87,7 @@ The most important ones are :
 - Treesitter
 - CMP
 
-My colorscheme is Github_Dark with no background, you can change it in `.config/nvim/lua/julien/plugins/colorscheme.lua`
+My colorscheme is Github_Dark_Default again, you can change it in `.config/nvim/lua/julien/plugins/colorscheme.lua`
 
 #### Plugin Manager
 
