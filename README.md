@@ -21,6 +21,37 @@ git clone https://github.com/julienbarthelemy/dev-config.git "${XDG_CONFIG_HOME:
 
 Not much here, I use Github_Dark on the Windows Terminal, added as JSON. I use WSL2 - Ubuntu.
 
+<details><summary> Theme </summary>
+
+JSON for my Terminal Theme.
+```json
+    {
+    "background": "#101216",
+    "black": "#000000",
+    "blue": "#6CA4F8",
+    "brightBlack": "#4D4D4D",
+    "brightBlue": "#6CA4F8",
+    "brightCyan": "#2B7489",
+    "brightGreen": "#56D364",
+    "brightPurple": "#DB61A2",
+    "brightRed": "#F78166",
+    "brightWhite": "#FFFFFF",
+    "brightYellow": "#E3B341",
+    "cursorColor": "#C9D1D9",
+    "cyan": "#2B7489",
+    "foreground": "#8B949E",
+    "green": "#56D364",
+    "name": "GitHub Dark",
+    "purple": "#DB61A2",
+    "red": "#F78166",
+    "selectionBackground": "#3B5070",
+    "white": "#FFFFFF",
+    "yellow": "#E3B341"
+    }
+```
+
+</details>
+
 # Neovim Setup
 
 I use Neovim instead of Vim as I find it easier to use LUA. You can achieve the same with VIM.
